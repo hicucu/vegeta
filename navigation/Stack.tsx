@@ -7,7 +7,25 @@ import FoodDetail from '../Screen/FoodDetail';
 import MyList from '../Screen/MyList';
 import Top10 from '../Screen/Top10';
 
-const Stack = createStackNavigator();
+export enum AppScreen {
+    Home = "Home",
+    SearchResult = "SearchResult",
+    SearchResultDetail = "SearchResultDetail",
+    FoodDetail = "FoodDetail",
+    MyList = "MyList",
+    Top10 = "Top10"
+};
+
+export type StackParamsList = {
+    Home: undefined,
+    SearchResult: undefined,
+    SearchResultDetail: undefined,
+    FoodDetail: undefined,
+    MyList: undefined,
+    Top10: undefined
+};
+
+const Stack = createStackNavigator<StackParamsList>();
 
 export default () =>{ 
     return (
@@ -16,9 +34,8 @@ export default () =>{
         <Stack.Screen name="SearchResult" component={SearchResult} />
         <Stack.Screen name="SearchResultDetail" component={SearchResultDetail} />
         <Stack.Screen name="FoodDetail" component={FoodDetail} />
-        <Stack.Screen name="HomMyListe" component={MyList} />
-        <Stack.Screen name="Top10" component={Top10} />
         <Stack.Screen name="MyList" component={MyList} />
+        <Stack.Screen name="Top10" component={Top10} />
     </Stack.Navigator>
     );  
 }

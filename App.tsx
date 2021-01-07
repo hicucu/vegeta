@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { Image } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
-import Stack from './navigation/Stack';
+import Stack from './Navigation/Stack';
 
 const cacheImages = (images:Array<string|number>)=>{
   return images.map(image=>{
