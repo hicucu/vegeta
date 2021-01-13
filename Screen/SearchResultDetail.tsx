@@ -1,6 +1,11 @@
-import React from 'react';
-import { View, Text} from 'react-native';
+import React from 'react'
+import { View, Text } from 'react-native'
 
-export default () => {
-  return (<View><Text>Search result detail</Text></View>);
+const SearchResultDetail: React.FC = () => {
+  return (
+    <View>
+      <Text>Search result detail</Text>
+    </View>
+  )
 }
+export default SearchResultDetail

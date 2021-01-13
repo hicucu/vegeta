@@ -1,6 +1,11 @@
-import React from 'react';
-import { View, Text} from 'react-native';
+import React from 'react'
+import { View, Text } from 'react-native'
 
-export default () => {
-  return <View><Text>Food detail</Text></View>;
+const FoodDetail: React.FC = () => {
+  return (
+    <View>
+      <Text>Food detail</Text>
+    </View>
+  )
 }
+export default FoodDetail
